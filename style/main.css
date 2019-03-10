@@ -1,0 +1,303 @@
+body{
+    background-color: #fff2d3;
+}
+
+/* GAME FIELD */
+
+.gamearea{
+    position: relative;
+    width: 1050px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    border: 5px solid #876000;
+}
+
+/* END OF GAME FIELD */
+
+/* GAME BOXES */
+
+.box{
+    position: absolute;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.playerbox{
+    top: 40px;
+    left: 40px;
+    transform: translate(-50%, -50%);
+    color: #876000;
+    border: 3px solid #876000;
+    background-color: #edd7a3;
+}
+
+/* END OF GAME BOXES */
+
+/* FOOD */
+
+.food{
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 5px solid #6d9b20;
+    background-color: #ddf7b2;
+    transform: translate(-50%, -50%);
+}
+
+/* END OF FOOD */
+
+/* SCORE COUNTING */
+
+.score{
+    font-family: 'Chango', cursive;
+    font-size: 10px;
+    color: #876000;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scoretable{
+    font-family: 'Chango', cursive;
+    font-size: 30px;
+    position: absolute;
+    right: 35px;
+    top: 0px;
+}
+
+/* END OF SCORE COUNTING */
+
+/* BUTTON */
+
+.button{
+    position: absolute;
+    top: -5px;
+    left: -110px;
+    width: 92px;
+    height: 40px;
+    border-radius: 15px;
+    color: #876000;
+    background-color: #edd7a3;
+    border: 4px solid #876000;
+    font-size: 14px;
+    font-family: 'Chango', cursive; 
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button:active{
+    color: #fff2d3;
+    border: 4px solid #fff2d3;
+}
+
+.disabled{
+    border: 5px solid #ccc !important;
+    color: #ccc;
+}
+
+/* END OF BUTTON */
+
+/* NEW BOX SETTING WINDOW */
+
+.new-window{
+    user-select: none;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #edd7a3;
+    border-radius: 30px;
+    border: 10px solid #876000;
+    color: #876000;
+    font-family: 'Chango', cursive; 
+}
+
+.new-window.newbox-set{
+    display: none;
+}
+
+.new-window h1{
+    text-align: center;
+}
+
+.newbox-set .colorset{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 500px;
+    background-color: #876000;
+    height: 50px;;
+}
+
+.colorset .color{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #876000;
+}
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.lime{
+    background-color: lime;
+}
+
+.green{
+    background-color: green;
+}
+
+.cyan{
+    background-color: cyan;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.magenta{
+    background-color: magenta;
+}
+
+.black{
+    background-color: black;
+}
+
+.colorset .color.selected-color{
+    border: 3px solid #fff2d3;
+}
+
+#demobox{
+    position: absolute;
+    top: 155px;
+    left: 40px;
+    color: #876000;
+    border: 3px solid #876000;
+    background-color: #edd7a3;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.newbox-set h3{
+    position: absolute;
+    top: 180px;
+    left: 121px;
+}
+
+.newbox-set .submit{
+    width: 200px;
+    height: 70px;
+    top: 160px;
+    left: 312px;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+/* END OF NEW BOX SETTING WINDOW */
+
+/* CONTROL SELECT WINDOW */
+
+.newcontrol-set.new-window{
+    display: none;
+    user-select: none;
+}
+
+.newcontrol-set.new-window .keys{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+}
+
+.newcontrol-set.new-window .keys:hover .key{
+    background-color: #fff2d3;
+}
+
+.newcontrol-set.new-window .keys:active .key{
+    background-color: #edd7a3;
+    color: #fff2d3;
+    border-color: #fff2d3;
+}
+
+.newcontrol-set.new-window .key{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #876000;
+    background-color: #edd7a3;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.newcontrol-set.new-window .key:first-child{
+    top: 0px;
+    left: 50px;
+}
+
+.newcontrol-set.new-window .key:nth-child(2){
+    top: 50px;
+    left: 0px;
+}
+
+.newcontrol-set.new-window .key:nth-child(3){
+    top: 50px;
+    left: 50px;
+}
+
+.newcontrol-set.new-window .key:nth-child(4){
+    top: 50px;
+    left: 100px;
+}
+
+.newcontrol-set.new-window .c-set-1{
+    top: 60px;
+    left: 70px;
+}
+
+.newcontrol-set.new-window .c-set-2{
+    top: 60px;
+    right: 70px;
+}
+
+.newcontrol-set.new-window .c-set-3{
+    bottom: 10px;
+    left: 70px;
+}
+
+.newcontrol-set.new-window .c-set-4{
+    bottom: 10px;
+    right: 70px;
+}
+
+/* END OF CONTROL SELECT WINDOW */
